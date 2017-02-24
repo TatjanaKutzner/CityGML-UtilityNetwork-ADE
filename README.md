@@ -14,8 +14,8 @@ The [CityGML wiki](http://www.citygmlwiki.org/index.php?title=CityGML_UtilityNet
 # Resources
 
 The **UML model** of the CityGML UtilityNetwork ADE was created using the software Enterprise Architect.  
-- This Enterprise Architect file contains the UML model:  
-- The UML diagrams are depicted in this PDF file as well:  
+- This [Enterprise Architect file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/UML/UtilityNetworkADE_2017_02_23.eap) contains the UML model.
+- The UML diagrams are depicted in this [PDF file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/UML/UML_diagrams_CityGML_UtilityNetwork_ADE.pdf) as well.  
 
 The **XML Schema file** of the UtilityNetwork ADE was derived automatically from the UML model using the software ShapeChange.  
 - This is the derived XML Schema file:  
