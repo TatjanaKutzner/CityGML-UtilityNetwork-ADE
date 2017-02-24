@@ -18,18 +18,16 @@ The **UML model** of the CityGML UtilityNetwork ADE was created using the softwa
 - The UML diagrams are depicted in this [PDF file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/UML/UML_diagrams_CityGML_UtilityNetwork_ADE.pdf) as well.  
 
 The **XML Schema file** of the UtilityNetwork ADE was derived automatically from the UML model using the software ShapeChange.  
-- This is the derived XML Schema file:  
-- Here the derived code list dictionaries are available:
+- This is the derived [XML Schema file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/XSD/CityGML_UtilityNetworkADE.xsd).
+- Here the derived [code list dictionaries](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/tree/master/XSD/codelists) are available.
 
 **ShapeChange** requires a configuration file to be able to derive the XML Schema file and code list dictionaries.  
-- This ShapeChange configuration file was used here:  
-
+- This [ShapeChange configuration file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/ShapeChange/ShapeChangeConfigurationFile_UtilityNetwork_ADE.xml) was used.
 For further information on how to use ShapeChange, please refer to http://shapechange.net/
 
 The CityGML UtilityNetwork ADE can be used with **FME** for writing network data in the CityGML format. 
-- This requires importing the feature type definitions into the FME workspace, which can be done using the file:  
-- This short tutorial describes how to import the UtilityNetwork ADE feature types into an FME workspace:  
-
+- This requires importing the feature type definitions into the FME workspace, which can be done using this [FME feature types definition file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/FME/CityGML_UtilityNetworkADE_feature_types.xml).  
+- This [short tutorial](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/FME/Importing_the%20CityGML_UtilityNetwork_ADE_in_FME.pdf) describes how to import the UtilityNetwork ADE feature types into an FME workspace.
 
 # More information
 
