@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Note: This file is not valid CityGML, it is only intended to be used by FME's schema reader.-->
+<!--
+
+   This file extends the sample dataset CityGML_feature_types.xml provided within the FME installation in the folder $FME_HOME/xml/CityGML/writer_feature_types by the feature type definitions of the CityGML UtilityNetwork ADE.
+   
+   Author               Date           Changes Made
+   ~~~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Tatjana Kutzner      Jan 7, 2016    Original Definition   
+
+-->
+   
+<CityModel xmlns="http://www.opengis.net/citygml/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:utility="http://www.citygml.org/ade/utility/2.0" xmlns:trans="http://www.opengis.net/citygml/transportation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0">
+  <dem:ReliefFeature/>
+  <dem:TINRelief/>
+  <dem:MassPointRelief/>
+  <dem:BreaklineRelief/>
+  <bldg:Building/>
+  <bldg:BuildingPart/>
+  <xAL:Address/>
+  <bldg:RoofSurface/>
+  <bldg:WallSurface/>
+  <bldg:GroundSurface/>
+  <bldg:ClosureSurface/>
+  <bldg:FloorSurface/>
+  <bldg:InteriorWallSurface/>
+  <bldg:CeilingSurface/>
+  <bldg:BuildingInstallation/>
+  <bldg:Door/>
+  <bldg:Window/>
+  <bldg:Room/>
+  <bldg:BuildingFurniture/>
+  <bldg:IntBuildingInstallation/>
+  <wtr:WaterBody/>
+  <wtr:WaterSurface/>
+  <wtr:WaterGroundSurface/>
+  <trans:TransportationComplex/>
+  <trans:Track/>
+  <trans:Road/>
+  <trans:Railway/>
+  <trans:Square/>
+  <trans:TrafficArea/>
+  <trans:AuxiliaryTrafficArea/>
+  <veg:SolitaryVegetationObject/>
+  <veg:PlantCover/>
+  <frn:CityFurniture/>
+  <luse:LandUse/>
+  <app:Appearance/>
+  <app:X3DMaterial/>
+  <app:GeoreferencedTexture/>
+  <app:ParameterizedTexture/>
+  <gen:GenericCityObject/>
+  <utility:AnyDevice/>
+  <utility:Bedding/>
+  <utility:Cable/>
+  <utility:Canal/>
+  <utility:ChemicalClassifier/>
+  <utility:Closed/>
+  <utility:ComplexFunctionalElement/>
+  <utility:ControllerDevice/>
+  <utility:ElectricalMedium/>
+  <utility:ElectricalMediumSupply/>
+  <utility:ExteriorMaterial/>
+  <utility:FeatureGraph/>
+  <utility:FillingMaterial/>
+  <utility:GHSClassifier/>
+  <utility:GaseousMedium/>
+  <utility:GaseousMediumSupply/>
+  <utility:GenericClassifier/>
+  <utility:HazardClass/>
+  <utility:HollowSpace/>
+  <utility:HollowSpacePart/>
+  <utility:InterFeatureLink/>
+  <utility:InteriorFeatureLink/>
+  <utility:InteriorMaterial/>
+  <utility:LiquidMedium/>
+  <utility:LiquidMediumSupply/>
+  <utility:MeasurementDevice/>
+  <utility:Network/>
+  <utility:NetworkGraph/>
+  <utility:NetworkLink/>
+  <utility:Node/>
+  <utility:OpticalMedium/>
+  <utility:OpticalMediumSupply/>
+  <utility:OtherShapePipe/>
+  <utility:OtherShell/>
+  <utility:ProtectiveElement/>
+  <utility:RectangularPipe/>
+  <utility:RectangularShell/>
+  <utility:RoleInNetwork/>
+  <utility:RoundPipe/>
+  <utility:RoundShell/>
+  <utility:SemiOpen/>
+  <utility:SimpleFunctionalElement/>
+  <utility:SolidMedium/>
+  <utility:SolidMediumSupply/>
+  <utility:Storage/>
+  <utility:StorageDevice/>
+  <utility:Supply/>
+  <utility:SupplyArea/>
+  <utility:TechDevice/>
+  <utility:TerminalElement/>
+</CityModel>

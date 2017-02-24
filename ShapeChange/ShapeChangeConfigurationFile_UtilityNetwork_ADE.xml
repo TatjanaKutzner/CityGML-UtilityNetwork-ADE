@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Created by Tatjana Kutzner - last edit: 2017-02-23 -->
+
+<ShapeChangeConfiguration xmlns:xi="http://www.w3.org/2001/XInclude" 
+    xmlns="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1" 
+    xmlns:sc="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1 http://shapechange.net/resources/schema/ShapeChangeConfiguration.xsd">
+
+  <input>
+    <parameter name="inputModelType" value="EA7"/>
+    <parameter name="inputFile" value="D:/CityGML/ADEs/UtilityNetwork_ADE/UtilityNetworkADE_2017_02_23.eap"/>
+    <parameter name="appSchemaName" value="UtilityNetwork"/>
+    <parameter name="checkingConstraints" value="disabled"/>
+    <xi:include href="http://shapechange.net/resources/config/StandardAliases.xml"/>
+    <stereotypeAliases>
+      <StereotypeAlias wellknown="" alias="Property"/>
+    </stereotypeAliases>
+  </input>
+
+  <log>
+    <parameter name="reportLevel" value="INFO"/>
+    <parameter name="logFile" value="D:/CityGML/ADEs/UtilityNetwork_ADE/ShapeChange_Dateien/logs/Log_CityGML_UtilityNetwork_ADE.xml"/>
+  </log>
+
+  <targets>
+    <TargetXmlSchema class="de.interactive_instruments.ShapeChange.Target.XmlSchema.XmlSchema" mode="enabled">
+      <targetParameter name="outputDirectory" value="D:/CityGML/ADEs/UtilityNetwork_ADE/ShapeChange_Dateien/xsds"/>
+      <targetParameter name="defaultEncodingRule" value="citygml-ade"/>
+      <xi:include href="http://shapechange.net/resources/config/StandardRules.xml"/>
+      <xi:include href="http://shapechange.net/resources/config/StandardNamespaces-v31.xml"/>
+      <xi:include href="http://shapechange.net/resources/config/StandardMapEntries-v31.xml"/>
+      <xmlNamespaces>
+        <XmlNamespace nsabr="core" ns="http://www.opengis.net/citygml/2.0" location="http://schemas.opengis.net/citygml/2.0/cityGMLBase.xsd"/>
+        <XmlNamespace nsabr="app" ns="http://www.opengis.net/citygml/appearance/2.0" location="http://schemas.opengis.net/citygml/appearance/2.0/appearance.xsd"/>
+        <XmlNamespace nsabr="brid" ns="http://www.opengis.net/citygml/bridge/2.0" location="http://schemas.opengis.net/citygml/bridge/2.0/bridge.xsd"/>
+        <XmlNamespace nsabr="bldg" ns="http://www.opengis.net/citygml/building/2.0" location="http://schemas.opengis.net/citygml/building/2.0/building.xsd"/>
+        <XmlNamespace nsabr="frn" ns="http://www.opengis.net/citygml/cityfurniture/2.0" location="http://schemas.opengis.net/citygml/cityfurniture/2.0/cityFurniture.xsd"/>
+        <XmlNamespace nsabr="grp" ns="http://www.opengis.net/citygml/cityobjectgroup/2.0" location="http://schemas.opengis.net/citygml/cityobjectgroup/2.0/cityObjectGroup.xsd"/>
+        <XmlNamespace nsabr="gen" ns="http://www.opengis.net/citygml/generics/2.0" location="http://schemas.opengis.net/citygml/generics/2.0/generics.xsd"/>
+        <XmlNamespace nsabr="luse" ns="http://www.opengis.net/citygml/landuse/2.0" location="http://schemas.opengis.net/citygml/landuse/2.0/landUse.xsd"/>
+        <XmlNamespace nsabr="dem" ns="http://www.opengis.net/citygml/relief/2.0" location="http://schemas.opengis.net/citygml/relief/2.0/relief.xsd"/>
+        <XmlNamespace nsabr="tran" ns="http://www.opengis.net/citygml/transportation/2.0" location="http://schemas.opengis.net/citygml/transportation/2.0/transportation.xsd"/>
+        <XmlNamespace nsabr="tun" ns="http://www.opengis.net/citygml/tunnel/2.0" location="http://schemas.opengis.net/citygml/tunnel/2.0/tunnel.xsd"/>
+        <XmlNamespace nsabr="veg" ns="http://www.opengis.net/citygml/vegetation/2.0" location="http://schemas.opengis.net/citygml/vegetation/2.0/vegetation.xsd"/>
+        <XmlNamespace nsabr="wtr" ns="http://www.opengis.net/citygml/waterbody/2.0" location="http://schemas.opengis.net/citygml/waterbody/2.0/waterBody.xsd"/>      
+      </xmlNamespaces>
+      <xsdMapEntries>
+        <XsdMapEntry type="URI" xsdEncodingRules="iso19136_2007" xmlPropertyType="anyURI" xmlType="anyURI" xmlTypeType="simple" xmlTypeContent="simple"/>
+        <XsdMapEntry type="QuantityExtent" xsdEncodingRules="iso19136_2007" xmlType="gml:QuantityExtentType" xmlPropertyType="gml:QuantityExtentType" xmlTypeType="complex" xmlTypeContent="simple"/>
+        <XsdMapEntry type="Code" xsdEncodingRules="iso19136_2007" xmlType="gml:CodeType" xmlPropertyType="gml:CodeType" xmlTypeType="complex" xmlTypeContent="simple"/>
+        <XsdMapEntry type="DoubleBetween0and1" xsdEncodingRules="iso19136_2007" xmlType="core:doubleBetween0and1" xmlPropertyType="core:doubleBetween0and1" xmlTypeType="complex" xmlTypeContent="simple"/>
+      </xsdMapEntries>
+    </TargetXmlSchema>
+    <Target class="de.interactive_instruments.ShapeChange.Target.Codelists.CodelistDictionaries" mode="enabled">
+      <targetParameter name="outputDirectory" value="D:/CityGML/ADEs/UtilityNetwork_ADE/ShapeChange_Dateien/codelists"/>
+    </Target>
+  </targets>
+
+</ShapeChangeConfiguration>
