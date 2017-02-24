@@ -23,7 +23,7 @@ The **XML Schema file** of the UtilityNetwork ADE was derived automatically from
 
 **ShapeChange** requires a configuration file to be able to derive the XML Schema file and code list dictionaries.  
 - This [ShapeChange configuration file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/ShapeChange/ShapeChangeConfigurationFile_UtilityNetwork_ADE.xml) was used.
-For further information on how to use ShapeChange, please refer to http://shapechange.net/
+For further information on how to use ShapeChange, please refer to http://shapechange.net/.
 
 The CityGML UtilityNetwork ADE can be used with **FME** for writing network data in the CityGML format. 
 - This requires importing the feature type definitions into the FME workspace, which can be done using this [FME feature types definition file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/FME/CityGML_UtilityNetworkADE_feature_types.xml).  
