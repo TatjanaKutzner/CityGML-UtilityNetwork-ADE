@@ -10,3 +10,29 @@ The following papers provide detailed information on the CityGML UtilityNetworkA
 - Kutzer, T. & Kolbe, T. H., 2016: Extending Semantic 3D City Models by Supply and Disposal Networks for Analysing the Urban Supply Situation. Publikationen der Deutschen Gesellschaft für Photogrammetrie, Fernerkundung und Geoinformation e.V., Volume 25, Kersten, T. P. (ed.), 36. Wissenschaftlich-Technische Jahrestagung der DGPF, June 7-9 in Bern, 382-394: http://www.dgpf.de/src/tagung/jt2016/proceedings/papers/36_DLT2016_Kutzner_Kolbe.pdf
 
 The [CityGML wiki](http://www.citygmlwiki.org/index.php?title=CityGML_UtilityNetworkADE) provides information on the UtilityNetwork ADE as well. The resources available at the CityGML wiki refer to version 0.9.0 of the UtilityNetwork ADE. This version served as basis for the further development of the ADE and for the resources provided on this github repository.
+
+# Resources
+
+The **UML model** of the CityGML UtilityNetwork ADE was created using the software Enterprise Architect.  
+- This Enterprise Architect file contains the UML model:  
+- The UML diagrams are depicted in this PDF file as well:  
+
+The **XML Schema file** of the UtilityNetwork ADE was derived automatically from the UML model using the software ShapeChange.  
+- This is the derived XML Schema file:  
+- Here the derived code list dictionaries are available:
+
+**ShapeChange** requires a configuration file to be able to derive the XML Schema file and code list dictionaries.  
+- This ShapeChange configuration file was used here:  
+
+For further information on how to use ShapeChange, please refer to http://shapechange.net/
+
+The CityGML UtilityNetwork ADE can be used with **FME** for writing network data in the CityGML format. 
+- This requires importing the feature type definitions into the FME workspace, which can be done using the file:  
+- This short tutorial describes how to import the UtilityNetwork ADE feature types into an FME workspace:  
+
+
+# More information
+
+[OGC CityGML](http://www.opengeospatial.org/standards/citygml) is an open data model and XML-based format for the storage and exchange of semantic 3D city models. It is an application schema for the [Geography Markup Language version 3.1.1 (GML3)](http://www.opengeospatial.org/standards/gml), the extendible international standard for spatial data exchange issued by the Open Geospatial Consortium (OGC) and the ISO TC211. The aim of the development of CityGML is to reach a common definition of the basic entities, attributes, and relations of a 3D city model. By means of so-called Application Domain Extensions (ADEs) the core model of CityGML can be extended systematically by application-specific attributes and object types.
+
+CityGML is an international OGC standard and can be used free of charge.
