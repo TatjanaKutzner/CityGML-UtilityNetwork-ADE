@@ -8,8 +8,8 @@
   <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="buildingHabitants" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="integer"/>
-  <element name="mediumSupply" substitutionGroup="core:_GenericApplicationPropertyOfAbstractCityObject" type="utility:AbstractMediumSupplyPropertyType"/>
-  <element name="roleInNetwork" substitutionGroup="core:_GenericApplicationPropertyOfAbstractCityObject" type="utility:RoleInNetworkPropertyType"/>
+  <element name="mediumSupply" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="utility:AbstractMediumSupplyPropertyType"/>
+  <element name="roleInNetwork" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="utility:RoleInNetworkPropertyType"/>
   <element abstract="true" name="AbstractCommodity" substitutionGroup="gml:_Feature" type="utility:AbstractCommodityType"/>
   <complexType abstract="true" name="AbstractCommodityType">
     <complexContent>
@@ -166,7 +166,7 @@
       <element ref="utility:AbstractMediumSupply"/>
     </sequence>
   </complexType>
-  <element abstract="true" name="AbstractNetworkFeature" substitutionGroup="core:AbstractCityObject" type="utility:AbstractNetworkFeatureType"/>
+  <element abstract="true" name="AbstractNetworkFeature" substitutionGroup="core:_CityObject" type="utility:AbstractNetworkFeatureType"/>
   <complexType abstract="true" name="AbstractNetworkFeatureType">
     <complexContent>
       <extension base="core:AbstractCityObjectType">
@@ -680,7 +680,7 @@
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
-  <element name="Network" substitutionGroup="core:AbstractCityObject" type="utility:NetworkType"/>
+  <element name="Network" substitutionGroup="core:_CityObject" type="utility:NetworkType"/>
   <complexType name="NetworkType">
     <complexContent>
       <extension base="core:AbstractCityObjectType">
