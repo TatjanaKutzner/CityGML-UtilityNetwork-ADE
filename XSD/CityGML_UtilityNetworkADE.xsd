@@ -727,7 +727,7 @@
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="linkMember" type="utility:NetworkLinkPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="networkLinkMember" type="utility:NetworkLinkPropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="linkMember" type="utility:InterFeatureLinkPropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="featureGraphMember" type="utility:FeatureGraphPropertyType"/>
         </sequence>
