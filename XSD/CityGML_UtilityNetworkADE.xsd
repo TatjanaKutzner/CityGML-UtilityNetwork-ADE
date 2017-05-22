@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:utility="http://www.citygml.org/ade/utility/0.9.1" elementFormDefault="qualified" targetNamespace="http://www.citygml.org/ade/utility/0.9.1" version="0.9.1">
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:utility="http://www.citygml.org/ade/utility/0.9.2" elementFormDefault="qualified" targetNamespace="http://www.citygml.org/ade/utility/0.9.2" version="0.9.2">
   <annotation>
     <documentation>This version of the UtilityNetwork ADE extends version 0.9.0 from http://www.citygmlwiki.org/index.php?title=CityGML_UtilityNetworkADE by functional characteristics and refinements as described in Kutzner, T. and Kolbe, T. H. (2016) Extending Semantic 3D City Models by Supply and Disposal Networks for Analysing the Urban Supply Situation, http://www.dgpf.de/src/tagung/jt2016/proceedings/papers/36_DLT2016_Kutzner_Kolbe.pdf</documentation>
   </annotation>
@@ -7,17 +7,14 @@
   <import namespace="http://www.opengis.net/citygml/cityobjectgroup/2.0" schemaLocation="http://schemas.opengis.net/citygml/cityobjectgroup/2.0/cityObjectGroup.xsd"/>
   <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
-  <element name="buildingHabitants" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="integer"/>
-  <element name="mediumSupply" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="utility:AbstractMediumSupplyPropertyType"/>
-  <element name="roleInNetwork" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="utility:RoleInNetworkPropertyType"/>
   <element abstract="true" name="AbstractCommodity" substitutionGroup="gml:_Feature" type="utility:AbstractCommodityType"/>
   <complexType abstract="true" name="AbstractCommodityType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element minOccurs="0" name="owner" type="string"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="associatedNetwork" type="utility:NetworkPropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="isClassifiedBy" type="utility:AbstractCommodityClassifierPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="associatedNetwork" type="utility:NetworkPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -40,10 +37,10 @@
           <element minOccurs="0" name="signalWord" type="utility:SignalWordValueType"/>
           <element minOccurs="0" name="isChemicalComplex" type="boolean"/>
           <element minOccurs="0" name="hazardClass" type="utility:HazardClassPropertyType"/>
-          <element minOccurs="0" name="boundedBy" type="utility:AbstractHollowSpacePropertyType"/>
-          <element minOccurs="0" name="definesCommodity" type="utility:AbstractCommodityPropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="consistsOfFurtherElements" type="utility:AbstractCommodityClassifierPropertyType"/>
           <element minOccurs="0" name="definesMaterial" type="utility:AbstractFeatureMaterialPropertyType"/>
+          <element minOccurs="0" name="definesCommodity" type="utility:AbstractCommodityPropertyType"/>
+          <element minOccurs="0" name="boundedBy" type="utility:AbstractHollowSpacePropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -93,10 +90,10 @@
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="usedBy" type="utility:AbstractNetworkFeaturePropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="isClassifiedBy" type="utility:AbstractCommodityClassifierPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="consistsOf" type="utility:InteriorMaterialPropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="consistsOfFM" type="utility:FillingMaterialPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="consistsOf" type="utility:InteriorMaterialPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="isClassifiedBy" type="utility:AbstractCommodityClassifierPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="usedBy" type="utility:AbstractNetworkFeaturePropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -132,8 +129,8 @@
           <element minOccurs="0" name="direction" type="gml:SignType"/>
           <element minOccurs="0" name="linkControl" type="utility:AbstractLinkControlPropertyType"/>
           <element minOccurs="0" name="realization" type="gml:CurvePropertyType"/>
-          <element name="end" type="utility:NodePropertyType"/>
           <element name="start" type="utility:NodePropertyType"/>
+          <element name="end" type="utility:NodePropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -178,11 +175,11 @@
           <element minOccurs="0" name="status" type="utility:StatusValueType"/>
           <element minOccurs="0" name="locationQuality" type="utility:SpatialQualityValueType"/>
           <element minOccurs="0" name="elevationQuality" type="utility:SpatialQualityValueType"/>
-          <element minOccurs="0" name="lod1Geometry" type="gml:GeometryPropertyType"/>
-          <element minOccurs="0" name="occupiedHollowSpace" type="utility:AbstractHollowSpacePropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="consistsOf" type="utility:AbstractNetworkFeaturePropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="hasMaterial" type="utility:AbstractFeatureMaterialPropertyType"/>
           <element minOccurs="0" name="topoGraph" type="utility:FeatureGraphPropertyType"/>
+          <element minOccurs="0" name="occupiedHollowSpace" type="utility:AbstractHollowSpacePropertyType"/>
+          <element minOccurs="0" name="lod1Geometry" type="gml:GeometryPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -437,8 +434,8 @@
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element maxOccurs="unbounded" name="nodeMember" type="utility:NodePropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="linkMember" type="utility:InteriorFeatureLinkPropertyType"/>
+          <element maxOccurs="unbounded" name="nodeMember" type="utility:NodePropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -727,9 +724,9 @@
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="networkLinkMember" type="utility:NetworkLinkPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="linkMember" type="utility:InterFeatureLinkPropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="featureGraphMember" type="utility:FeatureGraphPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="linkMember" type="utility:InterFeatureLinkPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="networkLinkMember" type="utility:NetworkLinkPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -1138,4 +1135,7 @@
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
+  <element name="buildingHabitants" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="integer"/>
+  <element name="mediumSupply" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="utility:AbstractMediumSupplyPropertyType"/>
+  <element name="roleInNetwork" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="utility:RoleInNetworkPropertyType"/>
 </schema>

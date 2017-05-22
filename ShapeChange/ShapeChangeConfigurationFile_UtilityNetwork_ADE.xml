@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Created by Tatjana Kutzner - last edit: 2017-02-23 -->
+<!-- Created by Tatjana Kutzner - last edit: 2017-05-16 -->
 
 <ShapeChangeConfiguration xmlns:xi="http://www.w3.org/2001/XInclude" 
     xmlns="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1" 
@@ -10,7 +10,7 @@
 
   <input>
     <parameter name="inputModelType" value="EA7"/>
-    <parameter name="inputFile" value="D:/CityGML/ADEs/UtilityNetwork_ADE/UtilityNetworkADE_2017_02_23.eap"/>
+    <parameter name="inputFile" value="D:/CityGML/ADEs/UtilityNetwork_ADE/UtilityNetworkADE_0_9_2.eap"/>
     <parameter name="appSchemaName" value="UtilityNetwork"/>
     <parameter name="checkingConstraints" value="disabled"/>
     <xi:include href="http://shapechange.net/resources/config/StandardAliases.xml"/>
@@ -47,7 +47,7 @@
         <XmlNamespace nsabr="wtr" ns="http://www.opengis.net/citygml/waterbody/2.0" location="http://schemas.opengis.net/citygml/waterbody/2.0/waterBody.xsd"/>      
       </xmlNamespaces>
       <xsdMapEntries>
-        <XsdMapEntry type="AbstractCityObject" xsdEncodingRules="iso19136_2007" xmlElement="core:_CityObject" xmlType="core:AbstractCityObjectType"/>
+        <XsdMapEntry type="_CityObject" xsdEncodingRules="iso19136_2007" xmlElement="core:_CityObject" xmlType="core:AbstractCityObjectType"/>
         <XsdMapEntry type="URI" xsdEncodingRules="iso19136_2007" xmlPropertyType="anyURI" xmlType="anyURI" xmlTypeType="simple" xmlTypeContent="simple"/>
         <XsdMapEntry type="QuantityExtent" xsdEncodingRules="iso19136_2007" xmlType="gml:QuantityExtentType" xmlPropertyType="gml:QuantityExtentType" xmlTypeType="complex" xmlTypeContent="simple"/>
         <XsdMapEntry type="Code" xsdEncodingRules="iso19136_2007" xmlType="gml:CodeType" xmlPropertyType="gml:CodeType" xmlTypeType="complex" xmlTypeContent="simple"/>
