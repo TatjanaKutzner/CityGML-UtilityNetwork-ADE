@@ -444,6 +444,7 @@
         <sequence>
           <element maxOccurs="unbounded" minOccurs="0" name="linkMember" type="utility:InteriorFeatureLinkPropertyType"/>
           <element maxOccurs="unbounded" name="nodeMember" type="utility:NodePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="networkLinkMember" type="utility:NetworkLinkPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -734,7 +735,6 @@
         <sequence>
           <element maxOccurs="unbounded" minOccurs="0" name="featureGraphMember" type="utility:FeatureGraphPropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="linkMember" type="utility:InterFeatureLinkPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="networkLinkMember" type="utility:NetworkLinkPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
