@@ -36,6 +36,7 @@ TECHNICAL INFORMATION
 
 CityGML Version: 2.0
 UtilityNetwork ADE Version: 0.9.2
+FME Version: 2017.0.1.2 (20170622 - Build 1792)
 
 ==================================================================================================
 BEST PRACTICES
