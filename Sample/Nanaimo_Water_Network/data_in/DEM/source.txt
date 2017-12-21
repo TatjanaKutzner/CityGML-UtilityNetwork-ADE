@@ -1,1 +1,0 @@
-This DEM was downloaded from the Government of Canada's Geospatial Data Extraction tool (http://maps.canada.ca/czs/index-en.html).  It is the CDEM product.
