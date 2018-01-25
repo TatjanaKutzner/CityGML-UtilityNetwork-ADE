@@ -12,18 +12,18 @@ by Alexandru Nichersu (EIFER) and by Dr. Tatjana Kutzner (from the Technische Un
 - TUM, Germany). It was made using Safe Software's "Feature Manipulation Engine" software.
 
 The purpose of this data sample is to act as a test case in the ongoing development of the Utility
-Network ADE, as well as to provide working example to help other researchers and developers to 
+Network ADE, as well as to provide a working example to help other researchers and developers to 
 develop their own Utility Network ADE datasets.
 
-This is the second version of the sample dataset, it is a modification and an expansion of the
-first version (found in the "v1" folder of the Sample folder. This work was presented by Isaac
-Boates at the 4th UtilityNetwork ADE workshop at EIFER. This newer version of the data sample
-showcases the following additions & chaages:
+**This is the second version of the sample dataset, it is a modification and an expansion of the
+first version** (found in the "v1" folder of the Sample folder). This work was presented by Isaac
+Boates at the 4th Utility Network ADE workshop at EIFER. This newer version of the data sample
+showcases the following additions & changes:
 
-- Workbench now works on the unmodified source data, rather than a modified version it.
+- Workbench now works on the unmodified source data, rather than a modified version of it.
 - Translation now occurs on any part of the source data, determined by a user-specified bounding
   box.
-- Addition of Buildings & Associated TerminalElements
+- Addition of Buildings & associated TerminalElements
 - Linkage of Service Lines to TerminalElements via InterFeatureLinks
 
 ==================================================================================================
@@ -44,7 +44,7 @@ TECHNICAL INFORMATION
 ==================================================================================================
 
 CityGML Version: 2.0
-UtilityNetwork ADE Version: 0.9.2
+Utility Network ADE Version: 0.9.2
 FME Version: 2017.1.1.0 (20171213 - Build 17722)
 
 ==================================================================================================
@@ -69,7 +69,7 @@ element.
 5. Wherever possible, the topographical representation of features (RoundPipes, Cables, Canals,
 etc.) should remain unmodified and no new features should be assumed. The topological
 representation (FeatureGraphs, InteriorFeatureLinks, InterFeatureLinks, Nodes, etc.) should
-be used to bridge gaps between features that are known to be connected, but not understoof how.
+be used to bridge gaps between features that are known to be connected, but not understood how.
 
 ==================================================================================================
 DEMONSTRATED FUNCTIONALITY
@@ -134,7 +134,7 @@ The following attributes & relationships also appear in this data sample:
 VISUALISATION
 ==================================================================================================
 
-To Visualise the output, use the free software "FZKViewer", developed by the Karlsruhe Institut
+To visualise the output, use the free software "FZKViewer", developed by the Karlsruhe Institut
 für Technologie (KIT). Runs on Windows only. Attempts have been made to run it using WINE on
 Linux but no success so far.
 
