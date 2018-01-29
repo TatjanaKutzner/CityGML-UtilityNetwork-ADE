@@ -1,7 +1,4 @@
-
-==================================================================================================
-OVERVIEW
-==================================================================================================
+# OVERVIEW
 
 This folder contains a Utility Network ADE sample dataset of a water pipe network in the city of
 Nanaimo, located on Vancouver Island in the province of British Columbia, Canada.
@@ -15,8 +12,8 @@ The purpose of this data sample is to act as a test case in the ongoing developm
 Network ADE, as well as to provide working example to help other researchers and developers to 
 develop their own Utility Network ADE datasets.
 
-This is the second version of the sample dataset, it is a modification and an expansion of the
-first version (found in the "v1" folder of the Sample folder. This work was presented by Isaac
+**This is the second version of the sample dataset, it is a modification and an expansion of the
+first version** (found in the "v1" folder of the Sample folder. This work was presented by Isaac
 Boates at the 4th UtilityNetwork ADE workshop at EIFER. This newer version of the data sample
 showcases the following additions & chaages:
 
@@ -26,9 +23,8 @@ showcases the following additions & chaages:
 - Addition of Buildings & Associated TerminalElements
 - Linkage of Service Lines to TerminalElements via InterFeatureLinks
 
-==================================================================================================
-CONTENTS
-==================================================================================================
+
+# CONTENTS
 
 data_in - The source data for the pipe network, service pipes, parcels and buildings, as well as a
 digital elevation model used to make it 3D.  Also contains sources and licences.
@@ -39,17 +35,13 @@ fme - The FME workbench file used to create the data sample.
 
 doc - Associated documentation regarding the sample dataset.
 
-==================================================================================================
-TECHNICAL INFORMATION
-==================================================================================================
+# TECHNICAL INFORMATION
 
 CityGML Version: 2.0
 UtilityNetwork ADE Version: 0.9.2
 FME Version: 2017.1.1.0 (20171213 - Build 17722)
 
-==================================================================================================
-BEST PRACTICES
-==================================================================================================
+# BEST PRACTICES
 
 So far, there are a number of "best practices" that have been established regarding the element
 hierarchy in Utility Network ADE CityGML files:
@@ -71,9 +63,7 @@ etc.) should remain unmodified and no new features should be assumed. The topolo
 representation (FeatureGraphs, InteriorFeatureLinks, InterFeatureLinks, Nodes, etc.) should
 be used to bridge gaps between features that are known to be connected, but not understoof how.
 
-==================================================================================================
-DEMONSTRATED FUNCTIONALITY
-==================================================================================================
+# DEMONSTRATED FUNCTIONALITY
 
 As of the publishing of this file (17.08.2017), the Utility Network ADE classes that are found 
 in this data sample are:
@@ -130,9 +120,7 @@ The following attributes & relationships also appear in this data sample:
    - end
    - type
 
-==================================================================================================
-VISUALISATION
-==================================================================================================
+# VISUALISATION
 
 To Visualise the output, use the free software "FZKViewer", developed by the Karlsruhe Institut
 für Technologie (KIT). Runs on Windows only. Attempts have been made to run it using WINE on
@@ -147,9 +135,7 @@ Download: https://www.iai.kit.edu/1302.php
 
 The output can also be visualised using the FME Data Inspector.
 
-==================================================================================================
-CONTACT INFORMATION
-==================================================================================================
+# CONTACT INFORMATION
 
 Isaac Boates
 Isaac.Boates@eifer.uni-karlsruhe.de
