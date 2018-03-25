@@ -29,6 +29,14 @@ The CityGML UtilityNetwork ADE can be used with **FME** for writing network data
 - This requires importing the feature type definitions into the FME workspace, which can be done using this [FME feature types definition file](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/FME/CityGML_UtilityNetworkADE_feature_types.xml).  
 - This [short tutorial](https://github.com/TatjanaKutzner/CityGML-UtilityNetwork-ADE/raw/master/FME/Importing_the%20CityGML_UtilityNetwork_ADE_in_FME.pdf) describes how to import the UtilityNetwork ADE feature types into an FME workspace.
 
+# Samples
+
+There are currently two public data samples for the UtilityNetwork ADE. They are both created **FME** using the schema file contained in this repository:
+
+1. [Water Pipe Network in Nanaimo, British Columbia, Canada](https://github.com/iboates/CityGML-UtilityNetwork-ADE-Nanaimo-Water-Network-Sample), created & maintained by [Isaac Boates](https://github.com/iboates). More information can be found in a [presentation at the 2017 CityGML UtilityNetwork ADE workshop](https://en.wiki.utilitynetworks.sig3d.org/images/upload/2017-12-08_UtiltyNetworkADE_Karlsruhe.pdf) and in the [supplementary information](https://en.wiki.utilitynetworks.sig3d.org/images/upload/2017-12-08_UtiltyNetworkADE_Supplementary_Info.pdf)
+
+2. [Sewer and Electrical Networks in Rotterdam, The Netherlands](https://github.com/XanderdenDuijn/CityGML-Utility-Network-ADE), created & maintained by [Xander den Duijn](https://github.com/XanderdenDuijn). More information can be found in a [presentation at the 2017 CityGML UtilityNetwork ADE workshop](https://en.wiki.utilitynetworks.sig3d.org/images/upload/UtilityNetworkADE_Karlsruhe_XanderdenDuijn.pdf)
+
 # More information
 
 [OGC CityGML](http://www.opengeospatial.org/standards/citygml) is an open data model and XML-based format for the storage and exchange of semantic 3D city models. It is an application schema for the [Geography Markup Language version 3.1.1 (GML3)](http://www.opengeospatial.org/standards/gml), the extendible international standard for spatial data exchange issued by the Open Geospatial Consortium (OGC) and the ISO TC211. The aim of the development of CityGML is to reach a common definition of the basic entities, attributes, and relations of a 3D city model. By means of so-called Application Domain Extensions (ADEs) the core model of CityGML can be extended systematically by application-specific attributes and object types.
