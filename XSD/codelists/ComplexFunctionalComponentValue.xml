@@ -1,0 +1,53 @@
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><Dictionary xmlns="http://www.opengis.net/gml" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ComplexFunctionalComponentValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2">ComplexFunctionalComponentValue</identifier>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11636">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">station</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11637">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">structure</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11638">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">factory</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11639">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">waterWork</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11640">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">treatmentPlant</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11641">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">heatingPlant</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11642">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">powerPlant</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11643">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">pumpingStation</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11713">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">transformer</identifier>
+    </Definition>
+  </dictionaryEntry>
+  <dictionaryEntry>
+    <Definition gml:id="_8917_11635">
+      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.2/ComplexFunctionalComponentValue">unknown</identifier>
+    </Definition>
+  </dictionaryEntry>
+</Dictionary>

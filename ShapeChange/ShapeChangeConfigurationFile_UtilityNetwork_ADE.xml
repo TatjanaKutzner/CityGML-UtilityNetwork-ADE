@@ -10,7 +10,7 @@
 
   <input>
     <parameter name="inputModelType" value="EA7"/>
-    <parameter name="inputFile" value="D:/CityGML/ADEs/UtilityNetwork_ADE/UtilityNetworkADE_0_9_2.eap"/>
+    <parameter name="inputFile" value="D:/CityGML/ADEs/UtilityNetwork_ADE/UtilityNetworkADE.eap"/>
     <parameter name="appSchemaName" value="UtilityNetwork"/>
     <parameter name="checkingConstraints" value="disabled"/>
     <xi:include href="http://shapechange.net/resources/config/StandardAliases.xml"/>
