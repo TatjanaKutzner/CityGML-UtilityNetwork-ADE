@@ -13,19 +13,23 @@ The [CityGML wiki](http://www.citygmlwiki.org/index.php?title=CityGML_UtilityNet
 
 # Resources
 
-The **UML model** of the CityGML UtilityNetwork ADE was created using the software Enterprise Architect. The UML folder provides
+The **UML model** of the CityGML UtilityNetwork ADE was created using the software Enterprise Architect.  
+The UML folder provides
 - the Enterprise Architect file that defines the UML model and
 - a PDF file that depicts the UML diagrams as well.  
 
-The **XML Schema file** of the UtilityNetwork ADE was derived automatically from the UML model using the software ShapeChange. The XSD folder provides 
+The **XML Schema file** of the UtilityNetwork ADE was derived automatically from the UML model using the software ShapeChange.  
+The XSD folder provides 
 - the derived XML Schema file and
 - the derived code list dictionaries.
 
-**ShapeChange** requires a configuration file to be able to derive the XML Schema file and code list dictionaries. The ShapeChange folder contains
+**ShapeChange** requires a configuration file to be able to derive the XML Schema file and code list dictionaries.  
+The ShapeChange folder contains
 - the ShapeChange configuration file that was used for the derivation.
 For further information on how to use ShapeChange, please refer to http://shapechange.net/.
 
-The CityGML UtilityNetwork ADE can be used with **FME** for writing network data in the CityGML format. The FME folder provides
+The CityGML UtilityNetwork ADE can be used with **FME** for writing network data in the CityGML format.  
+The FME folder provides
 - an FME feature types definition file that needs to be imported into the FME workspace and  
 - a short tutorial that describes how to import the UtilityNetwork ADE feature types into an FME workspace.
 
