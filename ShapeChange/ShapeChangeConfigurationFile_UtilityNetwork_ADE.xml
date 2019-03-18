@@ -47,7 +47,7 @@
         <XmlNamespace nsabr="wtr" ns="http://www.opengis.net/citygml/waterbody/2.0" location="http://schemas.opengis.net/citygml/waterbody/2.0/waterBody.xsd"/>      
       </xmlNamespaces>
       <xsdMapEntries>
-        <XsdMapEntry type="_CityObject" xsdEncodingRules="iso19136_2007" xmlElement="core:_CityObject" xmlType="core:AbstractCityObjectType"/>
+        <XsdMapEntry type="_CityObject" xsdEncodingRules="iso19136_2007" xmlElement="core:_CityObject" xmlType="core:AbstractCityObjectType" xmlPropertyType="core:AbstractCityObjectType"/>
         <XsdMapEntry type="URI" xsdEncodingRules="iso19136_2007" xmlPropertyType="anyURI" xmlType="anyURI" xmlTypeType="simple" xmlTypeContent="simple"/>
         <XsdMapEntry type="QuantityExtent" xsdEncodingRules="iso19136_2007" xmlType="gml:QuantityExtentType" xmlPropertyType="gml:QuantityExtentType" xmlTypeType="complex" xmlTypeContent="simple"/>
         <XsdMapEntry type="Code" xsdEncodingRules="iso19136_2007" xmlType="gml:CodeType" xmlPropertyType="gml:CodeType" xmlTypeType="complex" xmlTypeContent="simple"/>

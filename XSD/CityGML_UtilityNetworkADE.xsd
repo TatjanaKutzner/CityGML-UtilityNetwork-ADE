@@ -179,11 +179,9 @@
     <complexContent>
       <extension base="core:AbstractCityObjectType">
         <sequence>
-          <element minOccurs="0" name="owner" type="utility:ActorPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="operator" type="utility:ActorPropertyType"/>
-          <element minOccurs="0" name="connectedCityObject" type="core:_CityObjectPropertyByValueType"/>
           <element minOccurs="0" name="function" type="gml:CodeType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="usage" type="gml:CodeType"/>
+          <element minOccurs="0" name="connectedCityObject" type="core:AbstractCityObjectType"/>
           <element minOccurs="0" name="dateOfConstruction" type="date"/>
           <element minOccurs="0" name="status" type="utility:StatusValueType"/>
           <element minOccurs="0" name="locationQuality" type="utility:SpatialQualityValueType"/>
@@ -193,6 +191,8 @@
           <element minOccurs="0" name="topoGraph" type="utility:FeatureGraphPropertyType"/>
           <element minOccurs="0" name="occupiedHollowSpace" type="utility:AbstractHollowSpacePropertyType"/>
           <element minOccurs="0" name="lod1Geometry" type="gml:GeometryPropertyType"/>
+          <element minOccurs="0" name="owner" type="utility:ActorPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="operator" type="utility:ActorPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -400,8 +400,8 @@
     <complexContent>
       <extension base="utility:AbstractFunctionalElementType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="functionalComponent" type="utility:AbstractFunctionalElementPropertyType"/>
           <element minOccurs="0" name="class" type="gml:CodeType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="functionalComponent" type="utility:AbstractFunctionalElementPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -483,21 +483,9 @@
     <complexContent>
       <extension base="utility:SimpleFunctionalComponentType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="actuator">
-            <complexType>
-              <sequence>
-                <element ref="utility:Actuator"/>
-              </sequence>
-            </complexType>
-          </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="regulator">
-            <complexType>
-              <sequence>
-                <element ref="utility:Regulator"/>
-              </sequence>
-            </complexType>
-          </element>
           <element minOccurs="0" name="class" type="gml:CodeType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="actuator" type="utility:ActuatorPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="regulator" type="utility:RegulatorPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
