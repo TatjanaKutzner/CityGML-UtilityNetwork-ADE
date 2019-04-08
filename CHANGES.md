@@ -1,4 +1,4 @@
-### Changes that have been applied in commit ff59b351c6a7e0fa569762c1d85d2b3fe235a7fa
+### Changes that have been applied in Release 0.9.3
 
 * A new Electricity network package was added which defines components specific to electricity networks.
 
