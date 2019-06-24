@@ -1,13 +1,16 @@
 ### Changes that have been applied in the latest upload based on the outcomes of the workshop 13-14 May 2019
 
 * The modelling of geometries and LODs of network features has substantially been refined by introducing
-  * lod2/3ImplicitGeometry associated with the class "ImplicitGeometry"
+  * lod1/2/3ImplicitRepresentation associated with the class "ImplicitGeometry"
   * lod1/2/3Solid associated with the class "GM_Solid"
   * lod0/2/3MultiSurface associated with the class "GM_MultiSurface"
   * lod2/3SweepGeometry linking the newly introduced class "SweepGeometry" which in turn is associated with "GM_Polygon" and "GM_Curve"
+  * To be compliant with CityGML 3.0, LoD4 was not introduced.
+  
+* All role names (with few exceptions) use now the name of the target class as role name, starting with a lower case letter. This complies to CityGML 3.0.
 
 * Class "Actor":
-  * The class was replaced by the class "RelatedParty" including the data types "Party" and "ContactType" and the code list "RoleValue".
+  * The class was replaced by the class "RelatedParty" including the classes "Party" and "ContactType" and the code list "RoleValue".
 
 * Class "AbstractNetworkFeature":
   * A new attribute "relatedParty" was added. The associations "owner" and "operator" from "AbstractNetworkFeature" to "Actor" were removed.
@@ -39,18 +42,22 @@
   * The type of the attribute "crossSection" was changed from "Length" to "Area".
   
 * The package "Feature Material" was revised:
-  * The class "AbstractFeatureMaterial" was renamed to "AbstractMaterial".
+  * The class "AbstractFeatureMaterial" was renamed to "Material" and has now an association to the class "ExternalReference".
   * The classes "Construction" and "MaterialLayer" were introduced.
   * The classes "FillingMaterial", "ExteriorMaterial", and "InteriorMaterial" were removed. These concepts are now expressed by the new classes "Construction" and "MaterialLayer" as well as the association "fillingMaterial" from "AbstractNetworkFeature" to "AbstractMaterial".
   
 * The package "NetworkProperties" was revised:
   * The classes "AbstractHazardClassifier", its subclasses "ChemicalClassifier", GHSClassifier, and "GenericClassifier" as well as the enumeration "SignalWordValue" were removed.
   * The class "AbstractCommodity" was renamed to "AbstractMedium" and has now an association to the class "ExternalReference".
-  * Several attributes of the subclasses were either moved to "AbstractMedium" or deleted and new attributes were introduced.
-  * A new class "PhaseChangeMedium" was introduced.
+  * A new class "PhaseChangeMedium" was introduced. To be able to express that a phase change medium aggregates two single types of medium, a new class "AbstractSingleMedium" was introduced as super class of the classes "LiquidMedium", "SolidMedium", "GaseousMedium", "OpticalMedium", and "ElectricalMedium".
+  * The attributes of the subclasses were refined.
+  * The attribute "owner" was removed from the class "AbstractMedium". Instead, the value "ownerOfMedium" was added to the code list "RoleValue" in the package "Core".
 
 * Class "ProtectiveElement" and class "AbstractProtectionShell":
   * The classes were renamed to "EnclosingElement" and "AbstractEnclosingShell", respectively.
+  
+* Class "_AbstractBuilding":
+  * The attribute "buildingHabitants" was replaced by the attribute "occupancy" including the data type "Occupancy" and the code lists "IntervalValue" and "OccupantTypeValue" from CityGML 3.0.
   
 
 
