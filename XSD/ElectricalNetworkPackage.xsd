@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:utility="http://www.citygml.org/ade/utility/0.9.9" elementFormDefault="qualified" targetNamespace="http://www.citygml.org/ade/utility/0.9.9" version="0.9.9">
+  <include schemaLocation="CityGML_UtilityNetworkADE.xsd"/>
+  <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="ACLineSegment" substitutionGroup="utility:Conductor" type="utility:ACLineSegmentType"/>
+  <complexType name="ACLineSegmentType">
+    <complexContent>
+      <extension base="utility:ConductorType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ACLineSegmentPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:ACLineSegment"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Breaker" substitutionGroup="utility:ProtectedSwitch" type="utility:BreakerType"/>
+  <complexType name="BreakerType">
+    <complexContent>
+      <extension base="utility:ProtectedSwitchType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BreakerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Breaker"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="BusbarSection" substitutionGroup="utility:Connector" type="utility:BusbarSectionType"/>
+  <complexType name="BusbarSectionType">
+    <complexContent>
+      <extension base="utility:ConnectorType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="BusbarSectionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:BusbarSection"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="CompositeSwitch" substitutionGroup="utility:ComplexFunctionalComponent" type="utility:CompositeSwitchType"/>
+  <complexType name="CompositeSwitchType">
+    <complexContent>
+      <extension base="utility:ComplexFunctionalComponentType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="switch">
+            <complexType>
+              <sequence>
+                <element ref="utility:Switch"/>
+              </sequence>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CompositeSwitchPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:CompositeSwitch"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Conductor" substitutionGroup="utility:Cable" type="utility:ConductorType"/>
+  <complexType name="ConductorType">
+    <complexContent>
+      <extension base="utility:CableType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ConductorPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Conductor"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Connector" substitutionGroup="utility:ConnectionComponent" type="utility:ConnectorType"/>
+  <complexType name="ConnectorType">
+    <complexContent>
+      <extension base="utility:ConnectionComponentType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ConnectorPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Connector"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="DCLineSegment" substitutionGroup="utility:Conductor" type="utility:DCLineSegmentType"/>
+  <complexType name="DCLineSegmentType">
+    <complexContent>
+      <extension base="utility:ConductorType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DCLineSegmentPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:DCLineSegment"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Disconnector" substitutionGroup="utility:Switch" type="utility:DisconnectorType"/>
+  <complexType name="DisconnectorType">
+    <complexContent>
+      <extension base="utility:SwitchType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DisconnectorPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Disconnector"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="EnergyConsumer" substitutionGroup="utility:TerminalComponent" type="utility:EnergyConsumerType"/>
+  <complexType name="EnergyConsumerType">
+    <complexContent>
+      <extension base="utility:TerminalComponentType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EnergyConsumerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:EnergyConsumer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="EnergySource" substitutionGroup="utility:TerminalComponent" type="utility:EnergySourceType"/>
+  <complexType name="EnergySourceType">
+    <complexContent>
+      <extension base="utility:TerminalComponentType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EnergySourcePropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:EnergySource"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Fuse" substitutionGroup="utility:Switch" type="utility:FuseType"/>
+  <complexType name="FuseType">
+    <complexContent>
+      <extension base="utility:SwitchType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FusePropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Fuse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Ground" substitutionGroup="utility:TerminalComponent" type="utility:GroundType"/>
+  <complexType name="GroundType">
+    <complexContent>
+      <extension base="utility:TerminalComponentType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GroundPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Ground"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="GroundDisconnector" substitutionGroup="utility:Switch" type="utility:GroundDisconnectorType"/>
+  <complexType name="GroundDisconnectorType">
+    <complexContent>
+      <extension base="utility:SwitchType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GroundDisconnectorPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:GroundDisconnector"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Jumper" substitutionGroup="utility:Switch" type="utility:JumperType"/>
+  <complexType name="JumperType">
+    <complexContent>
+      <extension base="utility:SwitchType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JumperPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Jumper"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Junction" substitutionGroup="utility:Connector" type="utility:JunctionType"/>
+  <complexType name="JunctionType">
+    <complexContent>
+      <extension base="utility:ConnectorType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="JunctionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Junction"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="LoadBreakSwitch" substitutionGroup="utility:ProtectedSwitch" type="utility:LoadBreakSwitchType"/>
+  <complexType name="LoadBreakSwitchType">
+    <complexContent>
+      <extension base="utility:ProtectedSwitchType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LoadBreakSwitchPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:LoadBreakSwitch"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="PowerTransformer" substitutionGroup="utility:ComplexFunctionalComponent" type="utility:PowerTransformerType"/>
+  <complexType name="PowerTransformerType">
+    <complexContent>
+      <extension base="utility:ComplexFunctionalComponentType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="transformerEnd">
+            <complexType>
+              <sequence>
+                <element ref="utility:TransformerEnd"/>
+              </sequence>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PowerTransformerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:PowerTransformer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="ProtectedSwitch" substitutionGroup="utility:Switch" type="utility:ProtectedSwitchType"/>
+  <complexType name="ProtectedSwitchType">
+    <complexContent>
+      <extension base="utility:SwitchType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProtectedSwitchPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:ProtectedSwitch"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="Switch" substitutionGroup="utility:ControllerComponent" type="utility:SwitchType"/>
+  <complexType name="SwitchType">
+    <complexContent>
+      <extension base="utility:ControllerComponentType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SwitchPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:Switch"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="TransformerEnd" substitutionGroup="utility:OtherComponent" type="utility:TransformerEndType"/>
+  <complexType name="TransformerEndType">
+    <complexContent>
+      <extension base="utility:OtherComponentType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TransformerEndPropertyType">
+    <sequence minOccurs="0">
+      <element ref="utility:TransformerEnd"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+</schema>
