@@ -1,13 +1,13 @@
 ### Changes that have been applied in the latest upload based on the outcomes of the workshop 13-14 May 2019
 
-* The modelling of geometries and LODs of network features has substantially been refined by introducing
+* The topographical modelling of geometries and LODs of network features has substantially been refined by introducing
   * lod1/2/3ImplicitRepresentation associated with the class "ImplicitGeometry"
   * lod1/2/3Solid associated with the class "GM_Solid"
   * lod0/2/3MultiSurface associated with the class "GM_MultiSurface"
   * lod2/3SweepGeometry linking the newly introduced class "SweepGeometry" which in turn is associated with "GM_Polygon" and "GM_Curve"
   * To be compliant with CityGML 3.0, LoD4 was not introduced.
   
-* All role names (with few exceptions) use now the name of the target class as role name, starting with a lower case letter. This complies to CityGML 3.0.
+* All role names (with few exceptions) use now the name of the target class as role name, starting with a lower case letter. This complies with CityGML 3.0.
 
 * Class "Actor":
   * The class was replaced by the class "RelatedParty" including the classes "Party" and "ContactType" and the code list "RoleValue".
