@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Created by Tatjana Kutzner - last edit: 2017-05-16 -->
+<!-- Created by Tatjana Kutzner - last edit: 2019-10-14 -->
 
 <ShapeChangeConfiguration xmlns:xi="http://www.w3.org/2001/XInclude" 
     xmlns="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1" 
@@ -52,6 +52,8 @@
         <XsdMapEntry type="QuantityExtent" xsdEncodingRules="iso19136_2007" xmlType="gml:QuantityExtentType" xmlPropertyType="gml:QuantityExtentType" xmlTypeType="complex" xmlTypeContent="simple"/>
         <XsdMapEntry type="Code" xsdEncodingRules="iso19136_2007" xmlType="gml:CodeType" xmlPropertyType="gml:CodeType" xmlTypeType="complex" xmlTypeContent="simple"/>
         <XsdMapEntry type="DoubleBetween0and1" xsdEncodingRules="iso19136_2007" xmlType="core:doubleBetween0and1" xmlPropertyType="core:doubleBetween0and1" xmlTypeType="complex" xmlTypeContent="simple"/>
+        <XsdMapEntry type="ExternalReference" xsdEncodingRules="iso19136_2007" xmlType="core:ExternalReferenceType" xmlPropertyType="core:ExternalReferenceType"/>
+        <XsdMapEntry type="ImplicitGeometry" xsdEncodingRules="iso19136_2007" xmlElement="core:ImplicitGeometry" xmlType="core:ImplicitGeometryType" xmlPropertyType="core:ImplicitRepresentationPropertyType"/>
       </xsdMapEntries>
     </TargetXmlSchema>
     <Target class="de.interactive_instruments.ShapeChange.Target.Codelists.CodelistDictionaries" mode="enabled">

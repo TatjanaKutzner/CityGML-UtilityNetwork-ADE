@@ -77,7 +77,7 @@
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="externalReference" type="core:ExternalReferencePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="externalReference" type="core:ExternalReferenceType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="network" type="utility:NetworkPropertyType"/>
         </sequence>
       </extension>
@@ -122,14 +122,14 @@
           <element minOccurs="0" name="lod0MultiSurface" type="gml:MultiSurfacePropertyType"/>
           <element minOccurs="0" name="lod0Curve" type="gml:CurvePropertyType"/>
           <element minOccurs="0" name="lod1Solid" type="gml:SolidPropertyType"/>
-          <element minOccurs="0" name="lod1ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
+          <element minOccurs="0" name="lod1ImplicitRepresentation" type="core:ImplicitRepresentationPropertyType"/>
           <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType"/>
           <element minOccurs="0" name="lod2Solid" type="gml:SolidPropertyType"/>
-          <element minOccurs="0" name="lod2ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
+          <element minOccurs="0" name="lod2ImplicitRepresentation" type="core:ImplicitRepresentationPropertyType"/>
           <element minOccurs="0" name="lod2SweepGeometry" type="utility:SweepGeometryPropertyType"/>
           <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType"/>
           <element minOccurs="0" name="lod3Solid" type="gml:SolidPropertyType"/>
-          <element minOccurs="0" name="lod3ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
+          <element minOccurs="0" name="lod3ImplicitRepresentation" type="core:ImplicitRepresentationPropertyType"/>
           <element minOccurs="0" name="lod3SweepGeometry" type="utility:SweepGeometryPropertyType"/>
         </sequence>
       </extension>
@@ -571,7 +571,7 @@
           <element minOccurs="0" name="isExplosive" type="boolean"/>
           <element minOccurs="0" name="isCorrosive" type="boolean"/>
           <element minOccurs="0" name="hazardClass" type="utility:HazardClassPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="externalReference" type="core:ExternalReferencePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="externalReference" type="core:ExternalReferenceType"/>
         </sequence>
       </extension>
     </complexContent>
