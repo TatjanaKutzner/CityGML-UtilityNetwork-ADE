@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:utility="http://www.citygml.org/ade/utility/0.9.9" elementFormDefault="qualified" targetNamespace="http://www.citygml.org/ade/utility/0.9.9" version="0.9.9">
+  <include schemaLocation="ElectricalNetworkPackage.xsd"/>
   <import namespace="http://www.opengis.net/citygml/2.0" schemaLocation="http://schemas.opengis.net/citygml/2.0/cityGMLBase.xsd"/>
   <import namespace="http://www.opengis.net/citygml/building/2.0" schemaLocation="http://schemas.opengis.net/citygml/building/2.0/building.xsd"/>
   <import namespace="http://www.opengis.net/citygml/cityobjectgroup/2.0" schemaLocation="http://schemas.opengis.net/citygml/cityobjectgroup/2.0/cityObjectGroup.xsd"/>
@@ -116,6 +117,7 @@
           <element minOccurs="0" name="measuredLength" type="gml:LengthType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="relatedParty" type="utility:RelatedPartyPropertyType"/>
           <element minOccurs="0" name="connectedCityObject" type="core:AbstractCityObjectType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="consistsOf" type="utility:AbstractNetworkFeaturePropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="featureGraph" type="utility:FeatureGraphPropertyType"/>
           <element minOccurs="0" name="construction" type="utility:ConstructionPropertyType"/>
           <element minOccurs="0" name="fillingMaterial" type="utility:MaterialPropertyType"/>
@@ -309,25 +311,20 @@
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
-  <element name="ContactType" substitutionGroup="gml:_GML" type="utility:ContactTypeType"/>
+  <element name="ContactType" substitutionGroup="gml:_Object" type="utility:ContactTypeType"/>
   <complexType name="ContactTypeType">
-    <complexContent>
-      <extension base="gml:AbstractGMLType">
-        <sequence>
-          <element minOccurs="0" name="contactRole" type="string"/>
-          <element minOccurs="0" name="contactPerson" type="string"/>
-          <element minOccurs="0" name="email" type="anyURI"/>
-          <element minOccurs="0" name="phone" type="string"/>
-          <element minOccurs="0" name="url" type="anyURI"/>
-        </sequence>
-      </extension>
-    </complexContent>
+    <sequence>
+      <element minOccurs="0" name="contactRole" type="string"/>
+      <element minOccurs="0" name="contactPerson" type="string"/>
+      <element minOccurs="0" name="email" type="anyURI"/>
+      <element minOccurs="0" name="phone" type="string"/>
+      <element minOccurs="0" name="url" type="anyURI"/>
+    </sequence>
   </complexType>
   <complexType name="ContactTypePropertyType">
-    <sequence minOccurs="0">
+    <sequence>
       <element ref="utility:ContactType"/>
     </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
   <element name="ControllerComponent" substitutionGroup="utility:SimpleFunctionalComponent" type="utility:ControllerComponentType"/>
   <complexType name="ControllerComponentType">
@@ -561,8 +558,8 @@
       <element ref="utility:LiquidMediumSupply"/>
     </sequence>
   </complexType>
-  <element abstract="true" name="Material" substitutionGroup="gml:_Feature" type="utility:MaterialType"/>
-  <complexType abstract="true" name="MaterialType">
+  <element name="Material" substitutionGroup="gml:_Feature" type="utility:MaterialType"/>
+  <complexType name="MaterialType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
@@ -620,7 +617,6 @@
     <complexContent>
       <extension base="core:AbstractCityObjectType">
         <sequence>
-          <element minOccurs="0" name="supplyArea" type="utility:SupplyAreaPropertyType"/>
           <element minOccurs="0" name="class" type="utility:NetworkClassValueType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="function" type="utility:NetworkFunctionAndUsageValueType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="usage" type="utility:NetworkFunctionAndUsageValueType"/>
@@ -631,6 +627,7 @@
           <element maxOccurs="unbounded" minOccurs="0" name="networkFeature" type="utility:AbstractNetworkFeaturePropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="networkGraph" type="utility:NetworkGraphPropertyType"/>
           <element minOccurs="0" name="medium" type="utility:AbstractMediumPropertyType"/>
+          <element minOccurs="0" name="supplyArea" type="utility:SupplyAreaPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -899,23 +896,18 @@
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
-  <element name="RelatedParty" substitutionGroup="gml:_GML" type="utility:RelatedPartyType"/>
+  <element name="RelatedParty" substitutionGroup="gml:_Object" type="utility:RelatedPartyType"/>
   <complexType name="RelatedPartyType">
-    <complexContent>
-      <extension base="gml:AbstractGMLType">
-        <sequence>
-          <element name="party" type="utility:PartyPropertyType"/>
-          <element name="role" type="gml:CodeType"/>
-          <element name="share" type="gml:ScaleType"/>
-        </sequence>
-      </extension>
-    </complexContent>
+    <sequence>
+      <element name="party" type="utility:PartyPropertyType"/>
+      <element name="role" type="gml:CodeType"/>
+      <element name="share" type="gml:ScaleType"/>
+    </sequence>
   </complexType>
   <complexType name="RelatedPartyPropertyType">
-    <sequence minOccurs="0">
+    <sequence>
       <element ref="utility:RelatedParty"/>
     </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
   <simpleType name="RepresentationValueType">
     <restriction base="string">
@@ -1037,6 +1029,21 @@
       <element ref="utility:SolidMedium"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+  <element name="SolidMediumSupply" substitutionGroup="utility:AbstractMediumSupply" type="utility:SolidMediumSupplyType"/>
+  <complexType name="SolidMediumSupplyType">
+    <complexContent>
+      <extension base="utility:AbstractMediumSupplyType">
+        <sequence>
+          <element name="type" type="gml:CodeType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SolidMediumSupplyPropertyType">
+    <sequence>
+      <element ref="utility:SolidMediumSupply"/>
+    </sequence>
   </complexType>
   <simpleType name="SpatialQualityValueType">
     <restriction base="string">
