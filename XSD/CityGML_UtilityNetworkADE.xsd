@@ -116,7 +116,7 @@
           <element minOccurs="0" name="elevationQuality" type="utility:SpatialQualityValueType"/>
           <element minOccurs="0" name="measuredLength" type="gml:LengthType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="relatedParty" type="utility:RelatedPartyPropertyType"/>
-          <element minOccurs="0" name="connectedCityObject" type="core:AbstractCityObjectType"/>
+          <element minOccurs="0" name="connectedCityObject" type="gml:ReferenceType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="consistsOf" type="utility:AbstractNetworkFeaturePropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="featureGraph" type="utility:FeatureGraphPropertyType"/>
           <element minOccurs="0" name="construction" type="utility:ConstructionPropertyType"/>
