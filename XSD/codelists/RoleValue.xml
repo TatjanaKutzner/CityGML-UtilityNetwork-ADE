@@ -1,28 +1,28 @@
-<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><Dictionary xmlns="http://www.opengis.net/gml" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoleValue" xsi:schemaLocation="http://www.opengis.net/gml null">
-  <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9">RoleValue</identifier>
-  <dictionaryEntry>
-    <Definition gml:id="_9124_11738">
-      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">owner</identifier>
-    </Definition>
-  </dictionaryEntry>
-  <dictionaryEntry>
-    <Definition gml:id="_9124_11818">
-      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">ownerOfMedium</identifier>
-    </Definition>
-  </dictionaryEntry>
-  <dictionaryEntry>
-    <Definition gml:id="_9124_11739">
-      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">operator</identifier>
-    </Definition>
-  </dictionaryEntry>
-  <dictionaryEntry>
-    <Definition gml:id="_9124_11744">
-      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">inspector</identifier>
-    </Definition>
-  </dictionaryEntry>
-  <dictionaryEntry>
-    <Definition gml:id="_9124_11745">
-      <identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">responsibleParty</identifier>
-    </Definition>
-  </dictionaryEntry>
-</Dictionary>
+<?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RoleValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9">RoleValue</gml:identifier>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_9124_11738">
+      <gml:identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">owner</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_9124_11739">
+      <gml:identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">operator</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_9124_11744">
+      <gml:identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">inspector</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_9124_11745">
+      <gml:identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">responsibleParty</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_9124_11818">
+      <gml:identifier codeSpace="http://www.citygml.org/ade/utility/0.9.9/RoleValue">ownerOfMedium</gml:identifier>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

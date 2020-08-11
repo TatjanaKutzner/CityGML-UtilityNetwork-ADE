@@ -90,8 +90,8 @@
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
-  <element name="AbstractMediumSupply" substitutionGroup="gml:_Object" type="utility:AbstractMediumSupplyType"/>
-  <complexType name="AbstractMediumSupplyType">
+  <element abstract="true" name="AbstractMediumSupply" substitutionGroup="gml:_Object" type="utility:AbstractMediumSupplyType"/>
+  <complexType abstract="true" name="AbstractMediumSupplyType">
     <sequence>
       <element minOccurs="0" name="potentialSupply" type="utility:SupplyPropertyType"/>
       <element minOccurs="0" name="currentSupply" type="utility:SupplyPropertyType"/>
@@ -380,12 +380,12 @@
   </complexType>
   <simpleType name="ElectricalMediumValueType">
     <restriction base="string">
-      <enumeration value="unknown"/>
       <enumeration value="directCurrent"/>
       <enumeration value="singlePhaseAlternatingCurrent"/>
       <enumeration value="threePhaseAlternatingCurrent"/>
       <enumeration value="undulatoryCurrent"/>
       <enumeration value="telephone"/>
+      <enumeration value="unknown"/>
     </restriction>
   </simpleType>
   <element name="EnclosingElement" substitutionGroup="utility:AbstractNetworkFeature" type="utility:EnclosingElementType"/>
@@ -759,8 +759,8 @@
   </complexType>
   <simpleType name="OpticalMediumValueType">
     <restriction base="string">
-      <enumeration value="unknown"/>
       <enumeration value="light"/>
+      <enumeration value="unknown"/>
     </restriction>
   </simpleType>
   <simpleType name="OpticalModeValueType">

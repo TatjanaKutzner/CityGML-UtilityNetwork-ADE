@@ -49,13 +49,7 @@
     <complexContent>
       <extension base="utility:ComplexFunctionalComponentType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="switch">
-            <complexType>
-              <sequence>
-                <element ref="utility:Switch"/>
-              </sequence>
-            </complexType>
-          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="switch" type="utility:SwitchPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -239,13 +233,7 @@
     <complexContent>
       <extension base="utility:ComplexFunctionalComponentType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="transformerEnd">
-            <complexType>
-              <sequence>
-                <element ref="utility:TransformerEnd"/>
-              </sequence>
-            </complexType>
-          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="transformerEnd" type="utility:TransformerEndPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
