@@ -4,6 +4,7 @@
   * lod1/2/3ImplicitRepresentation associated with the class "ImplicitGeometry"
   * lod1/2/3Solid associated with the class "GM_Solid"
   * lod0/2/3MultiSurface associated with the class "GM_MultiSurface"
+  * lod0Curve associated with the class "GM_Curve"
   * lod2/3SweepGeometry linking the newly introduced class "SweepGeometry" which in turn is associated with "GM_Polygon" and "GM_Curve"
   * To be compliant with CityGML 3.0, LoD4 was not introduced.
   
