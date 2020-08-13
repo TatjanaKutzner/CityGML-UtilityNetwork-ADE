@@ -61,7 +61,7 @@
         <sequence>
           <element minOccurs="0" name="direction" type="gml:SignType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="startNode" type="utility:NodePropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="endNote" type="utility:NodePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="endNode" type="utility:NodePropertyType"/>
           <element minOccurs="0" name="realization" type="gml:CurvePropertyType"/>
         </sequence>
       </extension>
