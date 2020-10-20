@@ -121,16 +121,17 @@
           <element maxOccurs="unbounded" minOccurs="0" name="featureGraph" type="utility:FeatureGraphPropertyType"/>
           <element minOccurs="0" name="construction" type="utility:ConstructionPropertyType"/>
           <element minOccurs="0" name="fillingMaterial" type="utility:MaterialPropertyType"/>
-          <element minOccurs="0" name="lod0MultiSurface" type="gml:MultiSurfacePropertyType"/>
+          <element minOccurs="0" name="lod0Point" type="gml:PointPropertyType"/>
           <element minOccurs="0" name="lod0Curve" type="gml:CurvePropertyType"/>
+          <element minOccurs="0" name="lod0MultiSurface" type="gml:MultiSurfacePropertyType"/>
           <element minOccurs="0" name="lod1Solid" type="gml:SolidPropertyType"/>
           <element minOccurs="0" name="lod1ImplicitRepresentation" type="core:ImplicitRepresentationPropertyType"/>
-          <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType"/>
           <element minOccurs="0" name="lod2Solid" type="gml:SolidPropertyType"/>
+          <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType"/>
           <element minOccurs="0" name="lod2ImplicitRepresentation" type="core:ImplicitRepresentationPropertyType"/>
           <element minOccurs="0" name="lod2SweepGeometry" type="utility:SweepGeometryPropertyType"/>
-          <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType"/>
           <element minOccurs="0" name="lod3Solid" type="gml:SolidPropertyType"/>
+          <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType"/>
           <element minOccurs="0" name="lod3ImplicitRepresentation" type="core:ImplicitRepresentationPropertyType"/>
           <element minOccurs="0" name="lod3SweepGeometry" type="utility:SweepGeometryPropertyType"/>
         </sequence>
