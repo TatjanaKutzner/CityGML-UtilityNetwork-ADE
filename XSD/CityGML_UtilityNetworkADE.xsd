@@ -60,8 +60,8 @@
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element minOccurs="0" name="direction" type="gml:SignType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="startNode" type="utility:NodePropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="endNode" type="utility:NodePropertyType"/>
+          <element name="startNode" type="utility:NodePropertyType"/>
+          <element name="endNode" type="utility:NodePropertyType"/>
           <element minOccurs="0" name="realization" type="gml:CurvePropertyType"/>
         </sequence>
       </extension>
@@ -410,7 +410,7 @@
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="node" type="utility:NodePropertyType"/>
+          <element maxOccurs="unbounded" name="node" type="utility:NodePropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="interiorFeatureLink" type="utility:InteriorFeatureLinkPropertyType"/>
           <element maxOccurs="unbounded" minOccurs="0" name="networkLink" type="utility:NetworkLinkPropertyType"/>
         </sequence>
