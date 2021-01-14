@@ -60,7 +60,7 @@
   <utility:Cable/>
   <utility:Canal/>
   <utility:ClosedCanal/>
-  <utility:ComplexFunctionalElement/>
+  <utility:ComplexFunctionalComponent/>
   <utility:CompositeSwitch/>
   <utility:Conductor/>
   <utility:ConnectionComponent/>
